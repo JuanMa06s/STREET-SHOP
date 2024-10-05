@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>LA RESACA</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+
+  <style>
+    body {
+      background-color: #000; /* Fondo negro */
+      color: #fff; /* Texto blanco para contraste */
+      font-family: 'Bangers', Arial, sans-serif;
+    }
+
+    .login-box {
+      width: 360px;
+      margin: 7% auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+      font-family: 'Bangers', Arial, sans-serif;
+    }
+
+    .login-box-body {
+      text-align: center;
+    }
+
+    .login-box-msg {
+      margin-bottom: 20px;
+      color: #ff4747; /* Color rojo suave */
+      font-family: 'Bangers', Arial, sans-serif;
+    }
+
+    .form-control {
+      background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+      border: 1px solid #555; /* Borde más oscuro */
+      color: #fff; /* Texto blanco */
+      border-radius: 5px; /* Bordes redondeados */
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+      background-color: rgba(255, 255, 255, 0.2); /* Cambio de fondo al hacer focus */
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 10px rgba(255, 71, 71, 0.8); /* Sombra roja al hacer focus */
+    }
+
+    .form-control-feedback {
+      color: #ff4747; /* Icono con color rojo */
+    }
+
+    .btn-danger {
+      background-color: #ff4747; /* Botón rojo */
+      border: none;
+      border-radius: 5px; /* Bordes redondeados */
+    }
+
+    .btn-danger:hover {
+      background-color: #ff6161; /* Color más claro al pasar el mouse */
+      box-shadow: 0 4px 10px rgba(255, 97, 97, 0.5); /* Sombra al pasar el mouse */
+    }
+  </style>
+  <!-- Morris chart --><!-- Daterange picker -->
+</head>
+<div class="login-box text-center">
+  <div class="login-logo">
+    <a href="#"><b></b><B>  </B></a>
+  </div>
+  <img src="../reportes/LOGOR.png" height="100%" width="100%">
+  <br><br>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg" style="font-size: 25px;">INICIE SESION</p>
+
+    <form  method="post" id="frmAcceso">
+      <div class="form-group has-feedback">
+        <input type="text" id="logina" name="logina" class="form-control" placeholder="USUARIO">
+        <span class="fa fa-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" id="clavea" name="clavea" class="form-control" placeholder="CONTRASEÑA">
+        <span class="fa fa-key form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+        
+        </div>
+        <!-- /.col -->
+        <div class="col-xs-6">
+          <button type="submit" class="btn btn-danger btn-block  btn-flat">INGRESAR</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery 3 -->
+<script src="../public/js/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<!-- Bootstrap 3.3.7 -->
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/bootbox.min.js"></script>
+<script src="scripts/login.js"></script>
+<!-- iCheck -->
+
+</body>
+</html>
